@@ -10,7 +10,7 @@ const montserrat_500 = Montserrat({
 export default function NavBar() {
   return (
     <div>
-      <nav className="h-[58px] flex items-center px-20 ">
+      <nav className="h-[58px] flex items-center px-5 md:h-[58px] flex items-center px-20cl">
         {/*desktop navbar */}
         <div className="w-full flex flex-row justify-between items-center">
           <ul className="flex flex-row items-center gap-12">
@@ -22,15 +22,15 @@ export default function NavBar() {
               <Link href="/">Home</Link>
             </li>
             <li
-              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700`}>
+              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700 hidden md:block`}>
               <Link href="/about.us">About us</Link>
             </li>
             <li
-              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700`}>
+              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700 hidden md:block`}>
               <Link href="/contact.us">Contact us</Link>
             </li>
             <li
-              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700`}>
+              className={`${montserrat_500.className} text-green-700 hover:text-yellow-700 hidden md:block`}>
               <Link href="/products">Products</Link>
             </li>
           </ul>
